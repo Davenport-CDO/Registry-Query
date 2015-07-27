@@ -1,3 +1,6 @@
 reg query https://technet.microsoft.com/en-us/library/bb490984.aspx
 Log http://stackoverflow.com/questions/20484151/redirecting-output-from-within-batch-file 
 date/time in filename http://stackoverflow.com/questions/19832669/inserting-date-time-stamp-in-file-name-using-bat-script
+Notification Packages https://technet.microsoft.com/en-us/library/Cc963221.aspx
+Register Notification Packages https://msdn.microsoft.com/en-us/library/windows/desktop/aa379380(v=vs.85).aspx
+Notify Packages Registry Entries https://msdn.microsoft.com/en-us/library/windows/desktop/aa379402(v=vs.85).aspx

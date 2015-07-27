@@ -24,6 +24,11 @@ echo [Control Set 002 LSA]
 reg query "HKLM\SYSTEM\ControlSet002\Control\LSA" /v "Notification Packages"
 echo [Current Control Set LSA]
 reg query "HKLM\SYSTEM\CurrentControlSet\Control\LSA" /v "Notification Packages"
+echo Notification Packages should consist of a value containing:
+echo	* scecli
+echo	* RASSFM
+echo	* FPNWCLNT
+echo	* KDCSVC
 echo .
 echo .
 REM Looks into the Run/RunOnce Section.
@@ -38,3 +43,9 @@ echo [HKCU Run]
 reg query "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /s
 echo [HKCU RunOnce]
 reg query "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" /s
+echo .
+echo .
+REM Looks into the Winlogon Notify Keys
+echo ------Winlogon Notify------
+reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify" /s
+reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\GPExtensions\{827D319E-6EAC-11D2-A4EA-00C04F79F83A}" /s
