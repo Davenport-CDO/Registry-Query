@@ -7,5 +7,4 @@ Displays ControlSet/Control/LSA Notification Packages
 
 Displays Run/RunOnce Entries
 
-
-# Resources I have used are located in the Resources file.
+Resources I have used are located in the Resources file.
