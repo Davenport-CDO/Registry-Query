@@ -16,8 +16,6 @@ exit /b
 echo %Date% %Time%
 REM Looks into the ControlSets section's Notifications Packages entry and displays entries.
 echo ------Control Sets------
-echo .
-echo .
 echo [Control Set 001 LSA]
 reg query "HKLM\SYSTEM\ControlSet001\Control\LSA" /v "Notification Packages"
 echo [Control Set 002 LSA]
@@ -29,12 +27,8 @@ echo	* scecli
 echo	* RASSFM
 echo	* FPNWCLNT
 echo	* KDCSVC
-echo .
-echo .
 REM Looks into the Run/RunOnce Section.
 echo ------Run Locations------
-echo .
-echo .
 echo [HKLM Run]
 reg query "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /s
 echo [HKLM RunOnce]
@@ -43,9 +37,11 @@ echo [HKCU Run]
 reg query "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /s
 echo [HKCU RunOnce]
 reg query "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce" /s
-echo .
-echo .
 REM Looks into the Winlogon Notify Keys
 echo ------Winlogon Notify------
+echo [Notify]
 reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify" /s
+REM Looks into the Group Policy Client-Side Extensions (Security)
+echo ------Group Policy Client-Side Extensions------
+echo [Security]
 reg query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\GPExtensions\{827D319E-6EAC-11D2-A4EA-00C04F79F83A}" /s
