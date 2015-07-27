@@ -4,6 +4,6 @@
 #####-- RegQuery --
 * Displays ControlSet/Control/LSA Notification Packages
 * Displays Run/RunOnce Entries
-* Displays Notify packages
+* Displays Notify Packages
 
 #####Resources I have used are located in the Resources file. [Click Here](/Resources)
