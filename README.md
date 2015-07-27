@@ -7,4 +7,4 @@ Displays ControlSet/Control/LSA Notification Packages
 
 Displays Run/RunOnce Entries
 
-Resources I have used are located in the Resources file. [Click Here](DU_CDO/Resources)
+Resources I have used are located in the Resources file. [Click Here](/Resources)
