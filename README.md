@@ -1,4 +1,4 @@
-# DU_CDO
+# Regisrty-Query
 ####Tools to look in specific areas for malware for CCDC
 
 #####-- RegQuery --
